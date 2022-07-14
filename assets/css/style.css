@@ -102,3 +102,9 @@ body{
 .menu-lateral__link--pinturas::before{
     content: "\e90a";
 }
+
+.cartao-conteudo{
+    display: grid;
+    
+    
+}
