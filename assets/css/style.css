@@ -103,8 +103,79 @@ body{
     content: "\e90a";
 }
 
+
+.principal{
+    padding: 24px 16px;
+}
+
+.titulo-pagina{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.cartao{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #2C343A;
+}
 .cartao-conteudo{
-    display: grid;
+    padding: 16px;
+    
+}
+
+.cartao-destaque{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.cartao-titulo{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.cartao-autor{
+    font-size: 14px;
+    font-weight: 400;
+    color:#95999C;
+    margin-bottom: 8px;
+}
+
+.cartao-info{
+    font-size: 14px;
+    color: #95999C;
     
     
+    margin-bottom: 8px;
+}
+
+.cartao-info--tempo::before{
+    content: "\e90c";
+    margin-right: 8px;
+    font-size: px
+}
+
+.cartao-info--views::before{
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.cartao-botao--destaque{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: red;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao-botao--destaque::before{
+    content: "\e90b";
+    font-size: 24px;
+    margin-right: 8px;
 }
