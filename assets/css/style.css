@@ -147,27 +147,26 @@ body{
 .cartao-info{
     font-size: 14px;
     color: #95999C;
-    
-    
+    display: inline-block;
+    margin-right: 30px;
     margin-bottom: 8px;
 }
 
 .cartao-info--tempo::before{
     content: "\e90c";
-    margin-right: 8px;
-    font-size: px
+    margin-right: 5px;
 }
 
 .cartao-info--views::before{
     content: "\e90f";
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 .cartao-botao--destaque{
     width: 100%;
     height: 40px;
     border-radius: 8px;
-    background-color: red;
+    background-color: #0480DC;
     font-weight: 600;
     display: flex;
     justify-content: center;
