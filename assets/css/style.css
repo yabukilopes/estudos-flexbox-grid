@@ -106,12 +106,14 @@ body{
 
 .principal{
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 
 .titulo-pagina{
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 14px;
+    
 }
 
 .cartao{
@@ -122,34 +124,40 @@ body{
 }
 .cartao-conteudo{
     padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+    align-items: baseline;
     
 }
 
 .cartao-destaque{
     font-size: 16px;
     color: white;
-    margin-bottom: 8px;
+    grid-column: span 2;
+    
 }
 
 .cartao-titulo{
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 8px;
+    grid-column: span 2;
+    
 }
 
 .cartao-autor{
     font-size: 14px;
     font-weight: 400;
     color:#95999C;
-    margin-bottom: 8px;
+    grid-column: span 2;
+   
 }
 
 .cartao-info{
     font-size: 14px;
     color: #95999C;
     display: inline-block;
-    margin-right: 30px;
-    margin-bottom: 8px;
+
 }
 
 .cartao-info--tempo::before{
@@ -171,10 +179,38 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-column: span 2;
 }
 
 .cartao-botao--destaque::before{
     content: "\e90b";
     font-size: 24px;
     margin-right: 8px;
+}
+
+.maisvistos-secao{
+    display: grid;
+    gap: 16px;
+}
+
+.maisvistostitulo{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cartao-botao--play{
+    width: 40px;
+    height: 40px;
+    background-color: #0480DC;
+    font-weight: 600;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.cartao-botao--play::before{
+    content: "\e90b";
+    font-size: 24px;
 }
